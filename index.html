@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<title>Inventario sena</title>
+</head>
+<body>
+	<button class="btn btn-block" id="materiales">Materiales</button>
+	<div class="container my-4 escondido" id="contenedorMateriales">
+		<button class="btn-block " id="mostrarRegistroMaterial">Agregar material</button>
+		<div class="form-group escondido mt-3" id="registroMaterial">
+			<input type="text" class="form-control" placeholder="ingrese nombre" id="nombre">
+			<input type="text" class="form-control my-3" placeholder="ingrese marca" id="marca">
+			<input type="text" class="form-control" placeholder="ingrese cantidad inicial" id="cantidad">
+			<button class="btn btn-danger col-2 mt-3" id="cerrar">Guardar</button>
+			<button class="btn btn-primary col-8 offset-1 mt-3" id="enviarMaterial">Guardar</button>
+		</div>
+		<button class="btn-block mt-3" id="mostrarLeerMaterial">Ver materiales</button>
+			<button class="btn btn-danger btn-block" id="cerrarTodo">Cerrar</button>
+		<div class="escondido" id="res">
+			<table class="table">
+				<thead>
+					<tr>
+						<td>Nombre producto</td>
+						<td>Marca producto</td>
+						<td>Cantidad actual</td>
+						<td>Opcion</td>
+					</tr>
+				</thead>
+				<tbody id="respuesta">
+					
+				</tbody>
+			</table>
+		</div>
+		<div id="formularioEditar">
+			
+		</div>
+	</div>
+	<button class="btn-block btn mt-3" id="mate">Llevar materiales</button>	
+	<div id="contenedorLleva" class="container my-3 escondido">
+		<button class="btn btn-block" id="llevarr">Llevar un producto</button>
+		<div class="form-group escondido" id="formularioLleva">
+			<form>
+				<label for="materia"  >Material a llevar</label>
+				<select  id="materia" required class="form-control">
+				</select>
+				<br/>
+				<input type="number" id="sac" required class="form-control" placeholder="Ingrese la cantidad a sacar">
+				<button type="submit" class="btn btn-block btn-primary" id="sacar">Enviar </button>
+				
+			</form>
+		</div>
+		<button class="btn btn-block my-3" id="todos">Mostrar prestamos</button>
+		<center>
+			<div class="escondido" id="prestamos">
+				<table>
+					<thead>
+						<tr>
+							<td>Producto</td>
+							<td>Cantidad</td>
+							<td>Opcion</td>
+						</tr>
+					</thead>
+					<tbody id="reeee"></tbody>
+				</table>
+			</div>
+		</center>
+		<div class="escondido" id="formlle">
+			<select  id="press" class="form-control"></select>
+			<button class="btn btn-block btn-primary" id="terminar">Enviar</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
